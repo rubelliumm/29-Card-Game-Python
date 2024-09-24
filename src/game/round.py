@@ -32,7 +32,7 @@ class Round:
     highest_bidder: Player
     highest_bid: int
     _is_trump_reaveled: bool = False
-    _round_points: int
+    round_points: int
     # this var will be set after distributing card.
 
     def __init__(
@@ -77,10 +77,12 @@ class Round:
             if self.ask_opponent_for_playing_double():
                 redoubled = self.ask_bidder_for_playing_redouble()
                 if redoubled:
-                    self._round_points = 4
+                    self.round_points = 4
                 else:
-                    self._round_points = 2
+                    self.round_points = 2
                     # pass this in round result to update in state..
+            else:
+                self.round_points = 1
             for player in self._players:
                 # randomly distribute 4 cards among 4 players.
                 random_items = random.sample(pack.cards, 4)
@@ -94,7 +96,7 @@ class Round:
             _playing_double_lst.append(
                 player.ask(f"do you wanna play double?? {player.cards} 'y' for Yes>>\t")
             )
-        return all(item == "y" for item in _playing_double_lst)
+        return any(item == "y" for item in _playing_double_lst)
 
     def ask_bidder_for_playing_redouble(self) -> bool:
         print("Do you wanna play redouble bidder???")
@@ -110,7 +112,7 @@ class Round:
             _response.append(
                 player.ask(f"Do you wanna redouble it?? {player.cards} 'y' for Yes>>\t")
             )
-        return all(str(x).lower() == "y" for x in _response)
+        return any(str(x).lower() == "y" for x in _response)
 
     def get_opponent_list(self) -> List[Player]:
         if (
@@ -192,7 +194,7 @@ class Round:
 
             result = RoundResult()
             result.set_round_winner(winner)
-            result.round_points = self._round_points
+            result.round_points = self.round_points
             result.highest_bidder = self.highest_bidder
             result.highest_bid = self.highest_bid
             result.is_game_over = self.game_state.is_game_over()
