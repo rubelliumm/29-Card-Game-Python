@@ -38,11 +38,11 @@ Follow these steps to clone the repository and start playing!
 ```
 
 ## How to play
-    Navigate to the project directory:
-```bash
+  Navigate to the project directory:
+```
   cd 29-Card-Game-Python
 ```
-    Run the main python game script.
+  Run the main python game script.
 ```python
   python3 main.py
 ```
