@@ -24,8 +24,54 @@ Welcome to the **Twenty-nine (29) Card Game** implemented in **Python**! This pr
 ## Getting Started
 Follow these steps to clone the repository and start playing!
 
-```python
-def start_game():
-    print("Welcome to the Twenty-nine card game!")
-    # Game logic here
-start_game()
+### Prerequisites
+- **Python 3.6+** is required. Check your version by running:
+  ```bash
+  python --version
+
+
+##Installation
+
+    Clone the repository
+
+git clone https://github.com/rubelliumm/29-Card-Game-Python.git
+
+Navigate to the project directory:
+cd twentynine-card-game-python
+
+(Optional) Create and activate a virtual environment:
+    python -m venv venv
+    source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+
+Install any required packages:
+    pip install -r requirements.txt
+
+##How to Play
+
+    Run the Game: Start the game by executing the main script:
+        python main.py
+
+    Game Rules:
+        The game starts with a bidding phase, followed by a card-playing phase.
+        Players attempt to win tricks by playing higher cards.
+        The team that reaches 29 points first wins!
+
+    Controls:
+        Follow on-screen prompts to bid, select trumps, and play cards.
+
+##Project Structure
+
+Here's an overview of the key files and directories in this project:
+
+    main.py: Main entry point to run the game.
+    cards.py: Contains classes for card objects and suits.
+    game.py: Manages the game rules, bidding, and scoring.
+    player.py: Contains the player class with methods for AI or human players.
+    round.py: Logic for handling each round's phases, including trick-taking.
+    README.md: Documentation for this project.
+
+##Contributing
+Contributions are welcome! Feel free to open an issue or submit a pull request. For major changes, please open a discussion first.
+
+##License
+This project is licensed under the MIT License - see the LICENSE file for details.
