@@ -24,4 +24,8 @@ Welcome to the **Twenty-nine (29) Card Game** implemented in **Python**! This pr
 ## Getting Started
 Follow these steps to clone the repository and start playing!
 
-
+```python
+def start_game():
+    print("Welcome to the Twenty-nine card game!")
+    # Game logic here
+start_game()
