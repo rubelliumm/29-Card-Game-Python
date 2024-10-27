@@ -47,7 +47,7 @@ Follow these steps to clone the repository and start playing!
   python3 main.py
 ```
 
-  Game Rules:
+  ### Game Rules:
       The game starts with a bidding phase, followed by a card-playing phase.
       Players attempt to win tricks by playing higher cards.
       The team that reaches 29 points first wins!
