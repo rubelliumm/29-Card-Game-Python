@@ -28,6 +28,7 @@ Follow these steps to clone the repository and start playing!
 - **Python 3.6+** is required. Check your version by running:
 ```python
   python --version
+```
 
 
 ## Installation
