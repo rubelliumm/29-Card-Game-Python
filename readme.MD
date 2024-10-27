@@ -62,6 +62,7 @@ all files and directories is under src directory.
 [data_structure]: contains the CardList Data structure [card_list.py]
 
 Under game directory:
+```
   twentynine.py: game's main entry point.
   bidding.py: bidding round of every single round.
   card.py: Contains classes for card objects and suits.
@@ -72,7 +73,7 @@ Under game directory:
   utils.py: some utils functions.
   constants.py: some user specific constants.
   README.md: Documentation for this project.
-
+```
 
 ## Contributing
 Contributions are welcome! Feel free to open an issue or submit a pull request. For major changes, please open a discussion first.
