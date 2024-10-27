@@ -26,7 +26,6 @@ Follow these steps to clone the repository and start playing!
 
 ### Prerequisites
 - **Python 3.6+** is required. Check your version by running:
-  ```bash
   python --version
 
 
@@ -46,7 +45,7 @@ cd twentynine-card-game-python
 Install any required packages:
     pip install -r requirements.txt
 
-##How to Play
+##how-to-Play
 
     Run the Game: Start the game by executing the main script:
         python main.py
