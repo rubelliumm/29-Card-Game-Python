@@ -53,7 +53,7 @@ Follow these steps to clone the repository and start playing!
   The team that reaches 29 points first wins!
 
   ### Controls:
-      Follow on-screen prompts to bid, select trumps, and play cards.
+  Follow on-screen prompts to bid, select trumps, and play cards.
 
 ## Project Structure
 
