@@ -26,17 +26,18 @@ Follow these steps to clone the repository and start playing!
 
 ### Prerequisites
 - **Python 3.6+** is required. Check your version by running:
+```python
   python --version
 
 
-##Installation
-
-    Clone the repository
-
-git clone https://github.com/rubelliumm/29-Card-Game-Python.git
+## Installation
+  Clone the repository
+```python
+  git clone https://github.com/rubelliumm/29-Card-Game-Python.git
 
 Navigate to the project directory:
-cd twentynine-card-game-python
+```bash
+  cd twentynine-card-game-python
 
 (Optional) Create and activate a virtual environment:
     python -m venv venv
