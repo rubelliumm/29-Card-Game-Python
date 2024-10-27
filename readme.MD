@@ -35,10 +35,12 @@ Follow these steps to clone the repository and start playing!
   Clone the repository
 ```python
   git clone https://github.com/rubelliumm/29-Card-Game-Python.git
+```
 
 Navigate to the project directory:
 ```bash
   cd twentynine-card-game-python
+```
 
 (Optional) Create and activate a virtual environment:
     python -m venv venv
