@@ -75,9 +75,7 @@ README.md: Documentation for this project.
 
 ## Project Structure
 
-Here's an overview of the key files and directories in this project, all located under the `src` directory:
-
-src/ ├── data_structure/ │ └── card_list.py # Contains the CardList data structure ├── game/ │ ├── twentynine.py # Game's main entry point │ ├── bidding.py # Handles bidding round for each game round │ ├── card.py # Contains classes for card objects and suits │ ├── board.py # Manages board functionality, points, highest card, winner, etc. │ ├── player.py # Player class with methods for AI or human players │ ├── round.py # Logic for handling phases of each round, including trick-taking │ ├── state.py # Game state management │ ├── utils.py # Utility functions │ └── constants.py # User-specific constants └── README.md # Documentation for this project
+<pre> ## Project Structure Here's an overview of the key files and directories in this project, all located under the `src` directory: ``` src/ ├── data_structure/ │ └── card_list.py # Contains the CardList data structure ├── game/ │ ├── twentynine.py # Game's main entry point │ ├── bidding.py # Handles bidding round for each game round │ ├── card.py # Contains classes for card objects and suits │ ├── board.py # Manages board functionality, points, highest card, winner, etc. │ ├── player.py # Player class with methods for AI or human players │ ├── round.py # Logic for handling phases of each round, including trick-taking │ ├── state.py # Game state management │ ├── utils.py # Utility functions │ └── constants.py # User-specific constants └── README.md # Documentation for this project ``` </pre>
 
 ## Contributing
 Contributions are welcome! Feel free to open an issue or submit a pull request. For major changes, please open a discussion first.
