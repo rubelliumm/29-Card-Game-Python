@@ -37,25 +37,15 @@ Follow these steps to clone the repository and start playing!
   git clone https://github.com/rubelliumm/29-Card-Game-Python.git
 ```
 
-Navigate to the project directory:
-```bash
-  cd 29-Card-Game-Python
-```
-```python
-  python3 main.py
-```
-
-(Optional) Create and activate a virtual environment:
-    python -m venv venv
-    source venv/bin/activate   # On Windows use `venv\Scripts\activate`
-
-Install any required packages:
-    pip install -r requirements.txt
-
-##how-to-Play
-
-    Run the Game: Start the game by executing the main script:
-        python main.py
+## How to play
+    Navigate to the project directory:
+    ```bash
+      cd 29-Card-Game-Python
+    ```
+    Run the main python game script.
+    ```python
+      python3 main.py
+    ```
 
     Game Rules:
         The game starts with a bidding phase, followed by a card-playing phase.
@@ -65,19 +55,26 @@ Install any required packages:
     Controls:
         Follow on-screen prompts to bid, select trumps, and play cards.
 
-##Project Structure
+## Project Structure
 
 Here's an overview of the key files and directories in this project:
+    all files and directories is under src directory.
+    [data_structure]: contains the CardList Data structure [card_list.py]
 
-    main.py: Main entry point to run the game.
-    cards.py: Contains classes for card objects and suits.
-    game.py: Manages the game rules, bidding, and scoring.
+    Under game directory:
+    twentynine.py: game's main entry point.
+    bidding.py: bidding round of every single round.
+    card.py: Contains classes for card objects and suits.
+    board.py: board object functionality. that manage current points on board, highest card, winner of single turn etc.
     player.py: Contains the player class with methods for AI or human players.
     round.py: Logic for handling each round's phases, including trick-taking.
+    state.py: game state management.
+    utils.py: some utils functions.
+    constants.py: some user specific constants.
     README.md: Documentation for this project.
 
-##Contributing
+## Contributing
 Contributions are welcome! Feel free to open an issue or submit a pull request. For major changes, please open a discussion first.
 
-##License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
